@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar for Categories -->
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <!-- List of categories -->
+            <ul id="categoryList">
+                <!-- Categories will be dynamically added here -->
+            </ul>
+            <!-- Input to add a new category -->
+            <input type="text" id="newCategoryInput" placeholder="Add new category">
+            <button id="addCategoryBtn">Add Category</button>
+        </div>
+
+        <!-- Main content for tasks -->
+        <div class="main-content">
+            <h1>To-Do List</h1>
+
+            <!-- Search Bar to filter tasks -->
+            <input type="text" id="searchBar" placeholder="Search tasks">
+
+            <!-- Task input fields -->
+            <input type="text" id="taskInput" placeholder="Enter a task" required>
+            <input type="date" id="taskDate" required>
+            <input type="time" id="taskTime" required>
+
+            <!-- Dropdown for task categories -->
+            <select id="taskCategory" required>
+                <option value="" disabled selected>Select Category</option>
+                <!-- Categories will be dynamically added here -->
+            </select>
+
+            <!-- Button to add a new task -->
+            <button id="addTaskBtn">Add Task</button>
+
+            <!-- List of tasks -->
+            <ul id="taskList">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+
+            <!-- Audio for alert notifications -->
+            <audio id="alertSound" src="alert.mp3"></audio>
+        </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
